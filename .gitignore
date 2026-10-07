@@ -115,3 +115,4 @@ frontend/.env.*.local
 ehthumbs.db
 Thumbs.db
 desktop.ini
+venv/
