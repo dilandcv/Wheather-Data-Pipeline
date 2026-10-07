@@ -1,0 +1,117 @@
+# ==========================================
+# Python & Entornos Virtuales
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+venv.bak/
+env.bak/
+
+# Byte-code / Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Empaquetado y distribución
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing y cobertura
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ==========================================
+# Frontend (Node.js / React / Vite)
+# ==========================================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Logs de gestores de paquetes
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Logs y Archivos de Ejecución
+# ==========================================
+*.log
+pipeline.log
+logs/
+
+# ==========================================
+# Variables de Entorno y Secretos
+# ==========================================
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+*.env
+
+# Conservar plantillas públicas de variables
+!.env.example
+!frontend/.env.example
+
+# ==========================================
+# Bases de Datos y Volcados Temporales
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+
+# ==========================================
+# Editores e IDEs
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Archivos del Sistema Operativo
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini

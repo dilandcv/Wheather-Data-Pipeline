@@ -46,3 +46,23 @@ Status: 200
 Datos válidos
 {'timestamp': '2026-10-07T14:45', 'temperature': 30.5, 'humidity': 73, 'wind_speed': 8.5}
 Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T15:00', 'temperature': 30.8, 'humidity': 71, 'wind_speed': 8.4}
+Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T15:15', 'temperature': 31.0, 'humidity': 71, 'wind_speed': 8.0}
+Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T15:30', 'temperature': 31.2, 'humidity': 70, 'wind_speed': 7.4}
+Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T15:45', 'temperature': 31.3, 'humidity': 70, 'wind_speed': 6.8}
+Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T16:00', 'temperature': 31.5, 'humidity': 69, 'wind_speed': 6.2}
+Dato guardado en PostgreSQL
