@@ -1,0 +1,48 @@
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T12:45', 'temperature': 27.9, 'humidity': 85, 'wind_speed': 7.7}
+Dato guardado en PostgreSQL
+Status: 503
+Traceback (most recent call last):
+  File "/home/cohorte5/Escritorio/weather-data-pipeline/app/main.py", line 7, in <module>
+    current_weather = get_current_weather()
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cohorte5/Escritorio/weather-data-pipeline/app/ingestion/weather_api.py", line 17, in get_current_weather
+    response.raise_for_status()
+  File "/home/cohorte5/Escritorio/weather-data-pipeline/venv/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=10.9685&longitude=-74.7813&current=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T13:15', 'temperature': 28.6, 'humidity': 81, 'wind_speed': 8.3}
+Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T13:30', 'temperature': 28.9, 'humidity': 80, 'wind_speed': 8.3}
+Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T13:45', 'temperature': 29.2, 'humidity': 78, 'wind_speed': 8.2}
+Dato guardado en PostgreSQL
+Status: 503
+Error al consultar la API del clima: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=10.9685&longitude=-74.7813&current=temperature_2m%2Crelative_humidity_2m%2Cwind_speed_10m
+Traceback (most recent call last):
+  File "/home/cohorte5/Escritorio/weather-data-pipeline/app/main.py", line 9, in <module>
+    weather_data = transform_weather_data(current_weather)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cohorte5/Escritorio/weather-data-pipeline/app/pipeline/transform.py", line 3, in transform_weather_data
+    "timestamp": current_weather["time"],
+                 ~~~~~~~~~~~~~~~^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T14:15', 'temperature': 29.8, 'humidity': 75, 'wind_speed': 8.3}
+Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T14:30', 'temperature': 30.2, 'humidity': 74, 'wind_speed': 8.4}
+Dato guardado en PostgreSQL
+Status: 200
+Datos válidos
+{'timestamp': '2026-10-07T14:45', 'temperature': 30.5, 'humidity': 73, 'wind_speed': 8.5}
+Dato guardado en PostgreSQL
